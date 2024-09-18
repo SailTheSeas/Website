@@ -1,0 +1,392 @@
+﻿@font-face {
+    font-family: silentLips;
+    src: url(fonts/silent_lips.ttf)
+}
+
+
+@media only screen and (min-width: 992px) {
+    a.url {
+        padding-left: 10px;
+        padding-right: 10px;
+        color: darkgoldenrod;
+        font-family: Krylon;
+        font-size: 20px;
+    }
+    .menu, a.menu {
+        display: inline-flex;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: darkgoldenrod;
+        font-family: silentLips;
+        font-size: 20px;
+        margin: auto;
+    }
+
+    div.menu {
+        margin: auto;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 55%;
+        /*background-color: black;*/
+        z-index: 3;
+        transition: background-color 0.3s ease-in-out;
+        left: 25%;
+    }
+
+    a.inactive {
+        display: inline-flex;
+        pointer-events: none;
+        cursor: default;
+        color: silver;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-family: silentLips;
+        font-size: 20px;
+        margin: auto;
+    }
+
+    #sticky {
+        text-align: center;
+        width: 50%;
+        top: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+        background-color: #232324;
+        position: fixed;
+        /*background-color: gray;*/
+    }
+
+    body {
+        background-color: black;
+    }
+
+
+
+    * {
+        text-align: center;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    *::-webkit-scrollbar {
+        display: none;
+    }
+
+    h1.title {
+        color: white;
+        font-family: Krylon;
+        text-decoration: underline;
+    }
+
+    h1.label {
+        color: white;
+        font-family: silentLips;
+        text-decoration: underline;
+    }
+
+    h2, h3, h4, h5, h6 {
+        color: white;
+        font-family: Krylon;
+        text-decoration: underline;
+    }
+
+    p, ul, li {
+        color: white;
+        font-family: Krylon;
+    }
+
+    .video {
+        display: block;
+        margin: auto;
+        object-fit: contain;       
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+    }
+
+    button {
+        background-color: black;
+        color: goldenrod;
+        border: none;
+        font-size: 20px;
+        font-family: Krylon;       
+        border: 2px solid silver;
+    }
+
+    .display {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        object-fit: cover;
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+    a.url {
+        padding-left: 10px;
+        padding-right: 10px;
+        color: darkgoldenrod;
+        font-family: Krylon;
+        font-size: 20px;
+    }
+
+    .menu, a.menu {
+        display: inline-flex;
+        flex-wrap: wrap;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        color: darkgoldenrod;
+        font-family: silentLips;
+        font-size: 20px;
+        margin: auto;
+    }
+
+    div.menu {
+        margin: auto;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 55%;
+        /*background-color: black;*/
+        z-index: 3;
+        transition: background-color 0.3s ease-in-out;
+        left: 25%;
+    }
+
+    a.inactive {
+        display: inline-flex;
+        pointer-events: none;
+        cursor: default;
+        color: silver;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        font-family: silentLips;
+        font-size: 20px;
+        margin: auto;
+    }
+
+    #sticky {
+        text-align: center;
+        width: 50%;
+        top: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+        background-color: #232324;
+        position: fixed;
+        /*background-color: gray;*/
+    }
+
+    body {
+        background-color: black;
+    }
+
+
+
+    * {
+        text-align: center;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    *::-webkit-scrollbar {
+            display: none;
+    }
+
+    h1.title {
+        color: white;
+        font-family: Krylon;
+        text-decoration: underline;
+    }
+
+    h1.label {
+        color: white;
+        font-family: silentLips;
+        text-decoration: underline;
+    }
+
+    h2, h3, h4, h5, h6 {
+        color: white;
+        font-family: Krylon;
+        text-decoration: underline;
+    }
+
+    p, ul, li {
+        color: white;
+        font-family: Krylon;
+    }
+
+    .video {
+        
+        display: block;
+        margin: auto;
+        object-fit: contain;        
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 45vh;
+        z-index: -1;
+    }
+
+    button {
+        background-color: black;
+        color: goldenrod;
+        border: none;
+        font-size: 20px;
+        font-family: Krylon;
+        border: 2px solid silver;
+    }
+
+    .display {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    a.url {
+        padding-left: 10px;
+        padding-right: 10px;
+        color: darkgoldenrod;
+        font-family: Krylon;
+        font-size: 20px;
+    }
+
+    .menu, a.menu {
+        display: inline-flex;
+        flex-wrap: wrap;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: darkgoldenrod;
+        font-family: silentLips;
+        font-size: 22px;
+        margin: auto;
+        padding-bottom: 5px;
+    }
+
+    div.menu {
+        margin: auto;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 55%;
+        /*background-color: black;*/
+        z-index: 3;
+        transition: background-color 0.3s ease-in-out;
+        left: 25%;
+    }
+
+    a.inactive {
+        display: inline-flex;
+        pointer-events: none;
+        cursor: default;
+        color: silver;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-family: silentLips;
+        font-size: 22px;
+        margin: auto;
+        padding-bottom: 5px;
+    }
+
+    #sticky {
+        text-align: center;
+        width: 50%;
+        top: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+        background-color: #232324;
+        position: fixed;
+        /*background-color: gray;*/
+    }
+
+    body {
+        background-color: black;
+    }
+
+
+
+    * {
+        text-align: center;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+        *::-webkit-scrollbar {
+            display: none;
+        }
+
+    h1.title {
+        color: white;
+        font-family: Krylon;
+        text-decoration: underline;
+    }
+
+    h1.label {
+        color: white;
+        font-family: silentLips;
+        text-decoration: underline;
+    }
+
+    h2, h3, h4, h5, h6 {
+        color: white;
+        font-family: Krylon;
+        text-decoration: underline;
+    }
+
+    p, ul, li {
+        color: white;
+        font-family: Krylon;
+    }
+
+    .video {        
+        display: block;
+        margin: auto;
+        object-fit: contain;        
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 30vh;
+        z-index: -1;
+    }
+
+    button {
+        background-color: black;
+        color: goldenrod;
+        border: none;
+        font-size: 20px;
+        font-family: Krylon;
+        border: 2px solid silver;
+    }
+
+    .display {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+

@@ -1,0 +1,753 @@
+﻿@font-face {
+    font-family: silentLips;
+    src: url(fonts/silent_lips.ttf)
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        max-width: 400px;
+        display: inline-block;
+        position: relative;
+    }
+
+    img.link {
+        transition: transform .1s;
+        width: 100%;
+        height: auto;
+    }
+
+    .hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .textHover {
+        visibility: hidden;
+        width: 400px;
+        height: 270px;
+        background: rgba(0, 0, 0, 0.5);
+        color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .portfolioLabel {
+        font-family: Krylon;
+        font-size: 18px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        visibility: hidden;
+    }
+
+    img.display {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        object-fit: cover;
+        transition: 0.3s;
+    }
+
+    .display:hover {
+        cursor: pointer;
+        transform: scale(1.01);
+        box-shadow: 0 4px 8px 2px rgba(255, 255, 255, 0.2), 0 6px 20px 4px rgba(255, 255, 255, 0.19);
+    }
+
+    img.landscape {
+        
+        width: 60vh;
+        height: 35vh;
+    }
+
+    img.portrait {
+        width: 35vh;
+        height: 60vh;
+        
+    }
+
+    .gallery {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+    }
+
+    .slides {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    .slidesDisplayLandscape {
+        width: 65%;
+        
+    }
+
+    .slidesDisplayPortrait {
+        width: 30%;
+    }
+
+    .numberIndex {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .prev, .next {
+        z-index: 3;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .prev {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .close:hover {
+            /*color: #999;*/
+            text-decoration: none;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .filmHoriz {
+        display: inline;
+        margin: auto;
+        object-fit: contain;
+        padding-left: 50px;
+        top: 0;
+        left: 0;
+        width: 35%;
+        height: auto;
+        z-index: -1;
+    }
+
+    .filmVert {
+        display: inline;
+        margin: auto;
+        object-fit: contain;
+        padding-left: 50px;
+        top: 0;
+        left: 0;
+        width: 25%;
+        height: auto;
+        z-index: -1;
+    }
+
+    .filmHolder {
+        text-align: left;
+    }
+
+    .divider {
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    .controller {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+        cursor: pointer;
+    }
+
+    .slider {
+        -webkit-appearance: none;
+        margin-left: 50px;
+        width: 25%;
+        height: 25px;
+        background: white;
+        display: block;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+
+    .slider:hover {
+            opacity: 1;
+    }
+
+    .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            background: goldenRod;
+            cursor: pointer;
+    }
+
+    .download {
+        padding-left: 10px;
+        padding-right: 10px;
+        color: darkgoldenrod;
+        font-family: Krylon;
+        font-size: 20px;
+    }
+
+    .reference {
+        color: darkgoldenrod;
+        font-family: Krylon;
+        font-size: 18px;
+
+    }
+
+    .thumbnail {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        object-fit: cover;
+        width: 50%;
+        height: auto;
+    }
+
+    .para {
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        max-width: 300px;
+        display: inline-block;
+        position: relative;
+    }
+
+    img.link {
+        transition: transform .1s;
+        width: 100%;
+        height: auto;
+    }
+
+    .hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .textHover {
+        visibility: hidden;
+        width: 300px;
+        height: 210px;
+        background: rgba(0, 0, 0, 0.5);
+        color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .imageCover {
+    }
+
+    .portfolioLabel {
+        font-family: Krylon;
+        font-size: 18px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        visibility: hidden;
+    }
+
+    img.display {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        object-fit: cover;
+        transition: 0.3s;
+    }
+
+    .display:hover {
+        cursor: pointer;       
+        box-shadow: 0 4px 8px 2px rgba(255, 255, 255, 0.2), 0 6px 20px 4px rgba(255, 255, 255, 0.19);
+    }
+
+    img.landscape {
+        width: 90%;
+    }
+
+    img.portrait {
+        width: 48%;
+        height: 60vh;
+    }
+
+    .gallery {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+    }
+
+    .slides {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    .slidesDisplayLandscape {
+        width: 85%;
+        padding-top: 195px;
+    }
+
+    .slidesDisplayPortrait {
+        width: 75%;
+    }
+
+    .numberIndex {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .prev, .next {
+        z-index: 3;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .prev {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .close:hover {
+            /*color: #999;*/
+            text-decoration: none;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .filmHoriz {
+        display: inline;
+        margin: auto;
+        object-fit: contain;        
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+    }
+
+    .filmVert {
+        display: inline;
+        margin: auto;
+        object-fit: contain;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: auto;
+        z-index: -1;
+    }
+
+    .filmHolder {
+        text-align: center;
+    }
+
+    .divider {
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    .controller {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+        cursor: pointer;
+    }
+
+    .slider {
+        -webkit-appearance: none;
+        margin-left: 75px;
+        width: 80%;
+        height: 25px;
+        background: white;
+        display: block;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+
+    .slider:hover {
+        opacity: 1;
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: goldenRod;
+        cursor: pointer;
+    }
+
+    .download {
+        padding-left: 10px;
+        padding-right: 10px;
+        color: darkgoldenrod;
+        font-family: Krylon;
+        font-size: 20px;
+    }
+
+    .reference {
+        color: darkgoldenrod;
+        font-family: Krylon;
+        font-size: 18px;
+    }
+
+    .thumbnail {
+        
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    .para {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        max-width: 400px;
+        display: inline-block;
+        position: relative;
+    }
+
+    img.link {
+        transition: transform .1s;
+        width: 100%;
+        height: auto;
+    }
+
+    .hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .textHover {
+        visibility: hidden;
+        width: 400px;
+        height: 270px;
+        background: rgba(0, 0, 0, 0.5);
+        color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .imageCover {
+    }
+
+    .portfolioLabel {
+        font-family: Krylon;
+        font-size: 18px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        visibility: hidden;
+    }
+
+    img.display {
+        padding-left: 1px;
+        padding-right: 1px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        object-fit: cover;
+        transition: 0.3s;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .display:hover {
+        cursor: pointer;
+        /*//transform: scale(1.1);*/
+        box-shadow: 0 4px 8px 2px rgba(255, 255, 255, 0.2), 0 6px 20px 4px rgba(255, 255, 255, 0.19);
+    }
+
+    img.landscape {
+        width: 100%;
+    }
+
+    img.portrait {
+        width: 100%;
+        
+    }
+
+    .gallery {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+    }
+
+    .slides {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    .slidesDisplayLandscape {
+        width: 75%;
+        padding-top: 150px;
+    }
+
+    .slidesDisplayPortrait{
+        width: 70%;
+        padding-top: 60px;
+    }
+
+    .numberIndex {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .prev, .next {
+        z-index: 3;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .prev {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .close:hover {
+            /*color: #999;*/
+            text-decoration: none;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .filmHoriz {
+        display: inline;
+        margin: auto;
+        object-fit: contain;
+        
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+    }
+
+    .filmVert {
+        display: inline;
+        margin: auto;
+        object-fit: contain;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+    }
+
+    .filmHolder {
+        text-align: center;
+    }
+
+    .divider {
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    .controller {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+        cursor: pointer;
+    }
+
+    .slider {
+        -webkit-appearance: none;        
+        width: 100%;
+        height: 25px;
+        background: white;
+        display: block;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+
+    .slider:hover {
+        opacity: 1;
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: goldenRod;
+        cursor: pointer;
+    }
+
+    .download {
+        padding-left: 10px;
+        padding-right: 10px;
+        color: darkgoldenrod;
+        font-family: Krylon;
+        font-size: 20px;
+    }
+
+    .reference {
+        color: darkgoldenrod;
+        font-family: Krylon;
+        font-size: 18px;
+    }
+
+    .thumbnail {
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    .para {
+        display: inline;
+    }
+}

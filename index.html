@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Main page for Sail's website">
+    <meta name="author" content="Suhail Jadwat">
+    <meta name="keywords" content="Portfolio, HTML, UI, UX, Photography, Filmography, Game Design">
+    <title>WSOA3028A Website</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script type="module">
+        import { initialise } from "./JavaScript/menu.js"
+        initialise("Home")</script>
+
+
+</head>
+
+<body>
+    <header>
+        <h1 class="label">Sail's Ship</h1>
+
+        <nav>
+
+        </nav>
+
+    </header>
+
+    <h1 class="title">Home</h1>
+    <p class="h-card">
+        Journey into my world
+    </p>
+    <video class="video" autoplay muted loop>
+        <source src="Portfolio/ShortFilms/Demo.mp4" type="video/mp4">
+        <script type="module">
+            import { initialise } from "./JavaScript/cycle.js"
+            initialise()</script>
+        Your browser does not support the video tag.
+    </video>
+    <hr>
+    <div>
+        <h2>See My Work</h2>
+        <img src="Portfolio/Pictures/Animals.jpg" alt="Portfolio Sample" class="display" id="display"/>
+
+        <br />
+        <a href="Portfolio/portfolio.html" class="url">Here</a>
+    </div>
+    <hr>
+    <div>
+        <h2>Learn More</h2>
+        <a href="About/about.html" class="url">About Me</a>
+    </div>
+    <hr>
+    <div>
+        <h2>See The Design Behind</h2>
+        <a href="Designs/designs.html" class="url">This Website</a>
+    </div>
+    <hr>
+    <div>
+        <h2>Read My Stuff</h2>
+        <a href="Blog/blog.html" class="url">Blog</a>
+        <a href="Essays/essays.html" class="url">Essays</a>
+    </div>
+    <hr>
+    <script type="module">
+
+        import { initialise } from "./JavaScript/scroll.js"
+        initialise()
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+﻿@font-face {
+    font-family: silentLips;
+    src: url(fonts/silent_lips.ttf)
+}
+
+@media only screen and (min-width: 992px) {
+    div.content {
+        color: white;
+        font-size: 16px;
+        font-family: Krylon;
+        border-style: solid;
+        border-width: 2px;
+        border-color: white;
+        margin-right: 20%;
+        margin-left: 20%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    img {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 50%;
+        height: auto;
+    }
+
+    summary {
+        color: white;
+        font-size: 20px;
+        font-family: Krylon;
+    }
+
+    details {
+        color: white;
+        font-size: 16px;
+        font-family: Krylon;
+        border-style: solid;
+        border-width: 2px;
+        border-color: white;
+        margin-right: 450px;
+        margin-left: 450px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    div.summary {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    table, td, th {
+        border: 1px solid;
+        text-align: center;
+    }
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        border-collapse: collapse;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+    div.content {
+        color: white;
+        font-size: 20px;
+        font-family: Krylon;
+        border-style: solid;
+        border-width: 2px;
+        border-color: white;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+
+    img {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 95%;
+        height: auto;
+    }
+
+    summary {
+        color: white;
+        font-size: 20px;
+        font-family: Krylon;
+    }
+
+    details {
+        color: white;
+        font-size: 16px;
+        font-family: Krylon;
+        border-style: solid;
+        border-width: 2px;
+        border-color: white;
+        margin-right: 45px;
+        margin-left: 45px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    div.summary {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    table, td, th {
+        border: 1px solid;
+        text-align: center;
+    }
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        border-collapse: collapse;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    div.content {
+        color: white;
+        font-size: 18px;
+        font-family: Krylon;
+        border-style: solid;
+        border-width: 2px;
+        border-color: white;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    img {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        width: 100%;
+        height: auto;
+    }
+
+    summary {
+        color: white;
+        font-size: 20px;
+        font-family: Krylon;
+    }
+
+    details {
+        color: white;
+        font-size: 16px;
+        font-family: Krylon;
+        border-style: solid;
+        border-width: 2px;
+        border-color: white;
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    div.summary {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    table, td, th {
+        border: 1px solid;
+        text-align: center;
+    }
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        width: 99%;
+        border-collapse: collapse;
+    }
+}

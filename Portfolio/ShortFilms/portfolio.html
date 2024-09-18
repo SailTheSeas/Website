@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Page for Sail's website">
+    <meta name="author" content="Suhail Jadwat">
+    <title>Portfolio Short Films</title>
+    <link rel="stylesheet" href="../../CSS/portfolio.css">
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <script type="module">
+        import { initialise } from "../../JavaScript/menu.js"
+        initialise("pictures")</script>
+</head>
+
+<body>
+    <header>
+        <h1 class="label">Sail's Ship</h1>
+
+        <nav>
+
+        </nav>
+    </header>
+    <script src="../../JavaScript/videoControls.js"></script>
+
+    <h1 class="title">Short Films</h1>
+    <a class="url" href="../portfolio.html"> << Back </a>
+    <p>
+        All of these short films were made in stop motion style, some with the help of my friends.
+    </p>
+    <hr class="divider">
+    <h2>Ghosts and Grievances: Part 1</h2>
+    <div class="filmHolder">
+        <video class="filmHoriz" id="1" poster="Part 1.png">
+            <source src="Part 1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="para">
+            Mysterious invitations to a lethal tea party, who will attend and how will it end?
+        </p>
+        <div class="filmHolder">
+            <button class="controller" onclick="playPause(1)" id="button1">Play</button>
+            <input type="range" min="0" max="100" value="100" oninput="changeVolume(1)" class="slider" id="slider1">
+        </div>
+    </div>
+    <hr class="divider">
+    <h2>Ghosts and Grievances: Part 2</h2>
+    <div class="filmHolder">
+        <video class="filmHoriz" id="2" poster="Part 2.png">
+            <source src="Part 2.mp4" type="video/mp4">
+
+            Your browser does not support the video tag.
+        </video>
+        <p class="para">
+            Unfinished business for the tea party attenders, can they make peace with eachother?
+        </p>
+        <div class="filmHolder">
+            <button class="controller" onclick="playPause(2)" id="button2">Play</button>
+            <input type="range" min="0" max="100" value="100" oninput="changeVolume(2)" class="slider" id="slider2">
+        </div>
+    </div>
+    <hr class="divider">
+    <h2>Post Success Depression</h2>
+    <div class="filmHolder">
+        <video class="filmHoriz" id="3" poster="PSD.png">
+            <source src="PSD.mp4" type="video/mp4">
+
+            Your browser does not support the video tag.
+        </video>
+        <p class="para">
+            After finishing a big project, one often suffers from depression.
+        </p>
+        <div class="filmHolder">
+            <button class="controller" onclick="playPause(3)" id="button3">Play</button>
+            <input type="range" min="0" max="100" value="100" oninput="changeVolume(3)" class="slider" id="slider3">
+        </div>
+    </div>
+    <hr class="divider">
+    <h2>I love Rainy Days</h2>
+    <div class="filmHolder">
+        <video class="filmVert" id="4" poster="ILikeRain.png">
+            <source src="ILikeRain.mp4" type="video/mp4">
+
+            Your browser does not support the video tag.
+        </video>
+        <p class="para">
+            Rainy days are perfect for tea.
+        </p>
+        <div class="filmHolder">
+            <button class="controller" onclick="playPause(4)" id="button4">Play</button>
+            <input type="range" min="0" max="100" value="100" oninput="changeVolume(4)" class="slider" id="slider4">
+        </div>
+    </div>
+    <hr class="divider">
+    <h2>The Ghost in my Bed</h2>
+    <div class="filmHolder">
+        <video class="filmHoriz" id="5" poster="Ghost.png">
+            <source src="Ghost.mp4" type="video/mp4">
+
+            Your browser does not support the video tag.
+        </video>
+        <p class="para">
+            Those who are gone often leave presences in their wake.
+        </p>
+        <div class="filmHolder">
+            <button class="controller" onclick="playPause(5)" id="button5">Play</button>
+            <input type="range" min="0" max="100" value="100" oninput="changeVolume(5)" class="slider" id="slider5">
+        </div>
+    </div>
+    <script type="module">
+
+        import { initialise } from "../../JavaScript/scroll.js"
+        initialise()</script>
+
+</body>
+
+</html>

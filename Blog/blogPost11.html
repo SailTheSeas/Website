@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog 7 of Sail's Blog">
+    <meta name="author" content="Suhail Jadwat">
+    <title>Blog</title>
+    <link rel="stylesheet" href="../CSS/blog.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script type="module">
+        import { initialise } from "../JavaScript/menu.js"
+        initialise("blogs")</script>
+</head>
+
+<body>
+    <header>
+        <h1 class="label">Sail's Ship</h1>
+
+        <nav>
+
+        </nav>
+
+    </header>
+
+
+    <h1 class="title">Blog</h1>
+    <div class="content">
+        <h2>Week 11: Tea</h2>
+        <h3>Javacript and considerations</h3>
+        <p>
+            The main changes done to my website for javascript focused on my portfolio. Turning the main index page into a responsive element with the users interaction,
+            as well as building each portfolio page using javascript so that the different sets of pictures need not be loaded in manually.
+            However, in looking to add javascript to the website, a major hurdle was that many javascript implementations are reliant on css to work fluidly,
+            such as a sticky index, which was an element I wanted to add but had to postpone till css was allowed.
+
+            Javascript is a powerful tool however, as I found that I could add functions to change the page dynamically,
+            like resizing images when the user hovered over or for a button to take the user to the top of the page.
+        </p>
+
+        <a href="reflectionJava.html" class="url">Previous Week </a>
+        <a href="blog.html" class="url">All Blogs </a>
+        <a href="blogPost12.html" class="url"> Next Week </a>
+    </div>
+    <script type="module">
+
+        import { initialise } from "../JavaScript/scroll.js"
+        initialise()</script>
+
+</body>
+
+</html>

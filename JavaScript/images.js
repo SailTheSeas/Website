@@ -1,6 +1,6 @@
 //Loading Images Test
 
-const root = "/WSOA3028A_2430921/Portfolio"
+const root = "/Website/Portfolio"
 
 let slideIndex = 1;
 

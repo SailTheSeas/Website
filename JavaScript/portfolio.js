@@ -13,7 +13,7 @@ const portfolioItems =
         { name: "Nature", href: `Nature/portfolio.html` },
         { name: "Portraits", href: `Portraits/portfolio.html` },
         { name: "Sun", href: `Sun/portfolio.html` },
-        { name: "Short Films", href: `ShortFilms/portfolio.html` },
+/*        { name: "Short Films", href: `ShortFilms/portfolio.html` },*/
     ];
 const portfolioPictures =
     [
@@ -24,7 +24,7 @@ const portfolioPictures =
         { name: "Nature", href: `Pictures/Nature.jpg` },
         { name: "Portraits", href: `Pictures/Portraits.jpg` },
         { name: "Sun", href: `Pictures/Sun.jpg` },
-        { name: "Short Films", href: `Pictures/ShortFilms.gif` },
+/*        { name: "Short Films", href: `Pictures/ShortFilms.gif` },*/
     ];
 
 

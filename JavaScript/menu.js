@@ -6,16 +6,11 @@ const menuItems =
         { name: "Home", href: `${root}/index.html` },
         //{ name: "Blog", href: `${root}/Blog/blog.html` },
         //{ name: "Essays", href: `${root}/Essays/essays.html` },
-        { name: "Portfolio", href: `${root}/Portfolio/portfolio.html` },
+        { name: "Pictures", href: `${root}/Portfolio/portfolio.html` },
+        { name: "Short Films", href: `${root}/ShortFilms/portfolio.html` },
+        { name: "Games", href: `${root}/Portfolio/portfolio.html` },
         { name: "Design", href: `${root}/Designs/designs.html` },
         { name: "About", href: `${root}/About/about.html` },
-    ]
-
-const otherPages =
-    [
-        { name: "blogs" },
-        { name: "pictures" },
-        { name: "essay"}
     ]
 
 export function initialise(currentPage) {
